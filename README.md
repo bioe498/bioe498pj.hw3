@@ -22,6 +22,7 @@ stirring rate  | `x2`  | 40  | 60  | RPM
  * Lactose is the preferred carbon source for *L. lactis*.
  * Casamino acids are a nitrogen source made from digested soy protein.
  * Nisin is a peptide that induces expression of the acetoin production pathway.
+ * The units of the response variable (acetoin titer) are mg/L.
 
 ### Setup
 
