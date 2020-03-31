@@ -31,6 +31,8 @@ using this R package. If you haven't already, install the `devtools` package:
 ```{r}
 install.packages("devtools")
 ```
+If you have a Windows machine you may need to install the [`Rtools` package](https://cran.r-project.org/bin/windows/Rtools/)
+before installing `devtools`
 
 Next, install and load this package:
 
@@ -71,6 +73,8 @@ a minimum, maximum, or a saddle point?
 
 Use the `steepest` function to find the conditions with the maximum acetoin titer
 within the design space. What are the optimal operating conditions?
+
+Repeat the above steps using a CCD with a 2^5-1 Fractional Factorial Design.
 
 ### Submission
 
