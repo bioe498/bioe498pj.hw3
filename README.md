@@ -52,30 +52,30 @@ will add the responses for the first block of runs (the factorial points).
 
 ### Procedure
 
-Using the `rsm` package, set up a full-factorial, rotatable CCD.
+1. Using the `rsm` package, set up a full-factorial, rotatable CCD.
 Do not randomize the run order. Set the variable codings using the names in
 the above table and name the response variable `titer`. Make sure your
 design includes a blocking factor so you can perform the factorial and axial
 runs separately.
 
-Use the `run_experiments` function with `block=1` to add the responses for the
+2. Use the `run_experiments` function with `block=1` to add the responses for the
 factorial experiments.
 
-Build a RSM model using FO and TWI terms. Does the FO and TWI surface fit the
+3. Build a RSM model using FO and TWI terms. Does the FO and TWI surface fit the
 data well? Does this model have a reasonable stationary point? If so, is it
 a minimum, maximum, or a saddle point?
 
-Use the `run_experiments` function with `block=2` to add the responses for the
+4. Use the `run_experiments` function with `block=2` to add the responses for the
 axial experiments.
 
-Build a SO RSM model. Do the second-order terms improve the model?
+5. Build an SO RSM model. Do the second-order terms improve the model?
 Does this model have a reasonable stationary point? If so, is it
 a minimum, maximum, or a saddle point?
 
-Use the `steepest` function to find the conditions with the maximum acetoin titer
+6. Use the `steepest` function to find the conditions with the maximum acetoin titer
 within the design space. What are the optimal operating conditions?
 
-Repeat the above steps using a CCD with a 2^5-1 Fractional Factorial Design.
+7. Repeat the above steps using a CCD with a 2^5-1 Fractional Factorial Design.
 
 ### Submission
 
